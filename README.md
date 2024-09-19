@@ -42,23 +42,29 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 22 09 AM(10)](https://github.com/user-attachments/assets/250f04c8-7b85-486d-8a97-0ca66d5a5afb)
 
 
 
 cat < file2
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 22 09 AM(11)](https://github.com/user-attachments/assets/cb628c79-92cb-4f47-96f5-cf88279174dc)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![WhatsApp Image 2024-09-19 at 8 28 12 AM(2)](https://github.com/user-attachments/assets/3ec79294-c003-49a3-99c2-60fbf0d2cf5b)
+
 comm file1 file2
  ## OUTPUT
+ ![WhatsApp Image 2024-09-19 at 8 22 09 AM(9)](https://github.com/user-attachments/assets/9ca9c7c1-3ff9-430f-989e-ee61d5935c08)
+
 
  
 diff file1 file2
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 11 AM(1)](https://github.com/user-attachments/assets/9f294468-57ad-40dd-9ef9-2cf1ec56b2ba)
 
 
 #Filters
@@ -83,16 +89,19 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(48)](https://github.com/user-attachments/assets/a47e0c55-a760-4cea-ba9e-d9896bf04f16)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(48)](https://github.com/user-attachments/assets/7c3f7be9-fed6-4d86-8a0a-b673a963b829)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(50)](https://github.com/user-attachments/assets/8b20b38b-4978-49c7-86a2-f483eb1f8bcd)
 
 
 cat < newfile 
@@ -108,38 +117,45 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(51)](https://github.com/user-attachments/assets/dd06f17c-d684-4452-afdb-be3e391af133)
 
 
 grep hello newfile 
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(52)](https://github.com/user-attachments/assets/ca2439bc-24b4-4581-9221-74fa0c59eab0)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(50)](https://github.com/user-attachments/assets/ace8fd1c-c9a0-47f6-a659-a4eec0db7af2)
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(53)](https://github.com/user-attachments/assets/28f6cd7d-3660-4f85-b0cc-031278f14f1e)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(52)](https://github.com/user-attachments/assets/d3f9b41a-aad8-4492-bc8c-60718bffea6a)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(53)](https://github.com/user-attachments/assets/d736db75-90fd-410e-95b3-725e34d7fa92)
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(52)](https://github.com/user-attachments/assets/ce248cdd-3080-4159-8554-54f600af2fbe)
 
 
 cat < newfile 
@@ -164,58 +180,70 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(53)](https://github.com/user-attachments/assets/9c323b17-520f-40de-a349-fbc4939435ce)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(52)](https://github.com/user-attachments/assets/7b4e9864-4732-4def-8295-f23cf75ed2c9)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(53)](https://github.com/user-attachments/assets/3e320971-6db9-4642-9e7d-ed0b0f3e3ac6)
 
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(52)](https://github.com/user-attachments/assets/2ef93cbf-2f22-4e36-98ec-a6beb82a3ab8)
 
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(53)](https://github.com/user-attachments/assets/4a9ba85d-c29e-4970-89d1-a523fbec8a66)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(54)](https://github.com/user-attachments/assets/7045a6d0-b787-4c12-8b98-8b51657d9f07)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(52)](https://github.com/user-attachments/assets/9c4349b5-4ba5-42df-93ca-159345141c1d)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(54)](https://github.com/user-attachments/assets/2f9c867e-249a-4e2c-ae68-7451ddb2be28)
 
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(52)](https://github.com/user-attachments/assets/39fa9a4e-3c3c-48ce-9e62-ae0f5e42e62b)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(54)](https://github.com/user-attachments/assets/f96d4b5b-1008-44fe-83b1-f039dddefdb5)
 
 
 egrep l{2} newfile
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(52)](https://github.com/user-attachments/assets/95676e9c-5441-42a4-9abb-7217249aae4a)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(54)](https://github.com/user-attachments/assets/259d656c-72ea-459b-abf3-f6461890a5a8)
 
 
 cat > file23
@@ -235,46 +263,54 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(52)](https://github.com/user-attachments/assets/9ea6ed8c-5ff1-4104-9860-1991c85ce2af)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(54)](https://github.com/user-attachments/assets/41cd04f4-6e27-4fda-a770-2c1ca85c96a0)
 
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(52)](https://github.com/user-attachments/assets/f2b0b427-347d-4349-932e-4ec780b29d0c)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(54)](https://github.com/user-attachments/assets/bbccc3c0-3f45-45ec-b363-6261ab7d07d2)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(55)](https://github.com/user-attachments/assets/57474da9-bf00-46a5-a503-4019b7dbb459)
 
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(54)](https://github.com/user-attachments/assets/0a994b2c-ba3d-4309-8cae-7f196bae82c4)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(56)](https://github.com/user-attachments/assets/6a2b4f25-6e46-4266-a0e0-ba505b92cf39)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(54)](https://github.com/user-attachments/assets/79f963b4-b795-43b6-80cf-2c237261215c)
 
 
 seq 10 
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(55)](https://github.com/user-attachments/assets/d21f6434-f853-4ba5-adf1-848e221f76ad)
 
 
 
@@ -357,16 +393,19 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 28 12 AM(2)](https://github.com/user-attachments/assets/996acd25-7913-4ab8-8f6a-5dabe92188e2)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 28 12 AM(7)](https://github.com/user-attachments/assets/93116f8a-4d23-4c69-8cea-3e7aed80d30f)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 28 12 AM(2)](https://github.com/user-attachments/assets/f739162d-b7ea-429b-b1eb-6a6856f17149)
 
 
 mkdir backupdir
@@ -376,17 +415,21 @@ mv backup.tar backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(54)](https://github.com/user-attachments/assets/379e231d-e515-4a08-9f2b-9516d64bb765)
 
 tar -xvf backup.tar
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(56)](https://github.com/user-attachments/assets/b4a15070-1a2c-465a-9ab6-947144596688)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![WhatsApp Image 2024-09-19 at 8 29 06 AM(54)](https://github.com/user-attachments/assets/4de988b6-74e2-42ab-9b6e-b25609e1615f)
+
 gunzip backup.tar.gz
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 29 06 AM(56)](https://github.com/user-attachments/assets/356a66c5-a3c0-436f-9152-46e4f9f1d3b6)
 
  
 # Shell Script
@@ -410,6 +453,7 @@ stop
 cat herecheck.txt
 ## OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 19 24 AM(2)](https://github.com/user-attachments/assets/89276863-f103-4911-a21a-7dac3a01b35b)
 
 cat < scriptest.sh 
 ```bash
@@ -447,26 +491,32 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 20 03 AM(1)](https://github.com/user-attachments/assets/ac5d51cb-7339-4c3a-97d4-4e79cebe5aa7)
 
  
 ls file1
 ## OUTPUT
+![WhatsApp Image 2024-09-19 at 8 22 10 AM(5)](https://github.com/user-attachments/assets/a86192f4-af2f-4915-be7d-34abc227e018)
 
 echo $?
 ## OUTPUT 
+![WhatsApp Image 2024-09-19 at 8 22 10 AM(6)](https://github.com/user-attachments/assets/e82cca71-5a9e-43ee-a925-d8d624f99c37)
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ ![WhatsApp Image 2024-09-19 at 8 22 10 AM(6)](https://github.com/user-attachments/assets/668ef701-1caf-4db2-82af-bf7d1ce0b544)
+
 abcd
  
 echo $?
  ## OUTPUT
 
 
- 
+ ![WhatsApp Image 2024-09-19 at 8 22 10 AM(6)](https://github.com/user-attachments/assets/198c33e0-87a7-4264-ae2c-914b5991e62c)
+
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -497,12 +547,15 @@ fi
 ```
 ##OUTPUT
 
+![WhatsApp Image 2024-09-19 at 8 22 10 AM(5)](https://github.com/user-attachments/assets/cb392eee-d05c-4e56-be22-4dacba845f63)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+![Screenshot from 2024-09-19 09-35-19](https://github.com/user-attachments/assets/10e14d5f-19cb-4e3d-b6cc-8382a4f2410f)
+
 
 
 # check file ownership
@@ -530,6 +583,8 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![Screenshot from 2024-09-19 09-36-11](https://github.com/user-attachments/assets/180fac29-20c2-49c8-bed2-6de0893603aa)
+
 
 # check if with file location
 cat>ifnested.sh 
@@ -576,6 +631,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+![Screenshot from 2024-09-19 09-36-51](https://github.com/user-attachments/assets/98ee1ae6-64e2-408d-9300-587ef7ac1db2)
 
 
 
@@ -620,6 +676,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![Screenshot from 2024-09-19 09-37-37](https://github.com/user-attachments/assets/be60af4d-43cd-442a-b48f-f2b9b7fc19e5)
 
 # check if a file
 cat > ifnested.sh 
@@ -669,6 +726,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+![Screenshot from 2024-09-19 09-38-24](https://github.com/user-attachments/assets/2d632d02-e148-496b-bf99-97292fd2e83d)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -697,6 +755,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+![Screenshot from 2024-09-19 09-39-17](https://github.com/user-attachments/assets/d25a2e2c-2df2-42b5-8f1a-c4679f66ba72)
 
 
 # testing compound comparisons
@@ -713,6 +772,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![Screenshot from 2024-09-19 09-39-53](https://github.com/user-attachments/assets/e64bf029-76ad-4977-b8af-99d6c4af08ac)
 
 # using the case command
 cat >casecheck.sh 
@@ -824,6 +884,8 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![Screenshot from 2024-09-19 09-40-34](https://github.com/user-attachments/assets/eb3ab61b-7b6d-4a2b-9c28-16eb91fc4aa3)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -845,6 +907,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
+![Screenshot from 2024-09-19 09-41-13](https://github.com/user-attachments/assets/071f3cdf-08ef-4e86-8f46-e06b3ce49a56)
 
 
 cat forctype.sh 
@@ -860,6 +923,9 @@ $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
 
+
+![Screenshot from 2024-09-19 09-42-42](https://github.com/user-attachments/assets/e56cbf98-97aa-42fd-b81d-92a9bd4d0ea2)
+
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -872,6 +938,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![Screenshot from 2024-09-19 09-41-49](https://github.com/user-attachments/assets/121c0bd2-a4a2-47e9-9f9d-4809e31d7a49)
 
 cat fornested1.sh 
 ```bash
@@ -891,6 +958,8 @@ $ chmod 755 fornested1.sh
 $ ./fornested1.sh 
  ## OUTPUT
 
+![Screenshot from 2024-09-19 09-43-32](https://github.com/user-attachments/assets/9a8c9519-4b31-488a-b34c-8e71f8de5db5)
+
  
 cat forbreak.sh 
 ```bash
@@ -907,6 +976,11 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+
+
+![Screenshot from 2024-09-19 09-44-12](https://github.com/user-attachments/assets/7467ce24-8b78-4eba-a87f-ea78e8b6b7c8)
+
+
 
 $ chmod 755 forbreak.sh
  
@@ -947,6 +1021,8 @@ $ chmod 755 exread.sh
 $ ./exread.sh 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/d0682945-664b-471e-8eb2-c1b1647a2c4a)
+
 
  cat exread1.sh
 ```bash
@@ -958,6 +1034,8 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/fe8ef2d5-cc88-4270-bf7c-c0a1896660ab)
 
 
 
@@ -979,6 +1057,9 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
+
+![Screenshot from 2024-09-19 09-46-08](https://github.com/user-attachments/assets/1eb4b926-263d-49c3-a1b1-583b7eba87bd)
+
  ./funcex.sh 
 
  
@@ -996,6 +1077,9 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+
+![Screenshot from 2024-09-19 09-47-54](https://github.com/user-attachments/assets/b60da60d-4913-4a40-af50-92a81e8ec024)
+
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1013,6 +1097,8 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+
+
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1026,6 +1112,9 @@ done
 set +x
 ```
 ## OUTPUT
+
+![Screenshot from 2024-09-19 09-49-27](https://github.com/user-attachments/assets/5addcd01-b352-434f-b687-84581112dfd3)
+
  ./argshift.sh 1 2 3
  
  
@@ -1085,6 +1174,8 @@ else
 fi
 ```
 ## OUTPUT 
+
+![Screenshot from 2024-09-19 09-49-57](https://github.com/user-attachments/assets/3ce9829a-e504-49e3-8d49-44decf5049f8)
 
 
 # RESULT:

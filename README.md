@@ -1016,7 +1016,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Screenshot 2024-09-21 130625](https://github.com/user-attachments/assets/50d3ddaa-5611-4c83-a79d-dc5acdd527c7)
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -1108,6 +1109,7 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 
+![Screenshot 2024-09-21 130804](https://github.com/user-attachments/assets/05daab37-8960-406b-94c3-ec82d02b94cf)
 
 $ ./argshift.sh 1 2 3
  
@@ -1157,6 +1159,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
+![Screenshot 2024-09-21 130850](https://github.com/user-attachments/assets/6e983007-6625-4e0a-90b1-e6a20898374b)
  
 cat > palindrome.sh
 ```bash

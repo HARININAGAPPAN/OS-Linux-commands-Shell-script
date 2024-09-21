@@ -317,30 +317,37 @@ seq 10
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
+![Screenshot 2024-09-21 125127](https://github.com/user-attachments/assets/8ff4a5b5-aca9-4a2d-8b5c-0ea8ce35826e)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
+![Screenshot 2024-09-21 125325](https://github.com/user-attachments/assets/fe27458f-c8cc-449b-aaa4-45b8d4e9ab42)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
+![Screenshot 2024-09-21 125405](https://github.com/user-attachments/assets/1900a625-8d5e-4e29-a644-a856de5fd34d)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
+![Screenshot 2024-09-21 125529](https://github.com/user-attachments/assets/e7d8d854-28af-4f32-b677-3b913bbb2066)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+
+![Screenshot 2024-09-21 125907](https://github.com/user-attachments/assets/1a841440-eb92-409d-96e1-b3a350b13b2e)
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
 
+![Screenshot 2024-09-21 125704](https://github.com/user-attachments/assets/8b1ecd7c-4844-4f7a-99f1-5a40f4f1d0be)
 
 sed -n '2,4{s/$/*/;p}' file23
 
@@ -356,6 +363,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![Screenshot 2024-09-21 130225](https://github.com/user-attachments/assets/5cbdb8b2-5591-4eb9-8923-b45153b40abd)
 
 
 cat > file22
@@ -370,12 +378,14 @@ cat > file22
 uniq file22
 ## OUTPUT
 
+![Screenshot 2024-09-21 130140](https://github.com/user-attachments/assets/203482ac-e48e-43a9-9838-77dcef11390b)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![Screenshot 2024-09-21 130140](https://github.com/user-attachments/assets/cd6b7cf0-5ecd-46d8-8a36-816f9890b84f)
 
 cat < urllist.txt
 ```
